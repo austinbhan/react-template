@@ -4,6 +4,7 @@ import {
 } from 'react-router-dom';
 import AboutMe from './components/AboutMe';
 import FruitsVegetables from './components/FruitsVegetables';
+import Fruits from './components/Fruits';
 
 export default function App() {
   return (
@@ -20,7 +21,9 @@ export default function App() {
 
       <Routes>
         <Route path="aboutme" element={<AboutMe/>}/>
-        <Route path="fruits-vegetables" element={<FruitsVegetables/>}/>
+        <Route path="fruits-vegetables" element={<FruitsVegetables/>}>
+          <Route path ="fruits" element={<Fruits/>}/>
+        </Route>
       </Routes>
     
     </Router>

@@ -5,6 +5,7 @@ import {
 import AboutMe from './components/AboutMe';
 import FruitsVegetables from './components/FruitsVegetables';
 import Fruits from './components/Fruits';
+import Vegetables from './components/Vegetables';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="aboutme" element={<AboutMe/>}/>
         <Route path="fruits-vegetables" element={<FruitsVegetables/>}>
           <Route path ="fruits" element={<Fruits/>}/>
+          <Route path="vegetables" element={<Vegetables/>}/>
         </Route>
       </Routes>
     

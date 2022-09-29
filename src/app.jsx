@@ -6,6 +6,7 @@ import AboutMe from './components/AboutMe';
 import FruitsVegetables from './components/FruitsVegetables';
 import Fruits from './components/Fruits';
 import Vegetables from './components/Vegetables';
+import Form from './components/Form/Form';
 
 export default function App() {
   return (
@@ -18,6 +19,9 @@ export default function App() {
         <li>
           <Link to="fruits-vegetables">Fruits and Vegetables</Link>
         </li>
+        <li>
+          <Link to="form">Link to Form</Link>
+        </li>
       </ul>
 
       <Routes>
@@ -26,6 +30,7 @@ export default function App() {
           <Route path ="fruits" element={<Fruits/>}/>
           <Route path="vegetables" element={<Vegetables/>}/>
         </Route>
+        <Route path="form" element={<Form/>}/>
       </Routes>
     
     </Router>

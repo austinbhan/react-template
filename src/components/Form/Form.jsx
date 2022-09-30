@@ -1,7 +1,20 @@
+// Import the Form Components Here
+import {
+  InputControl
+} from '../FormComponents/FormComponents';
+
 export default function Form() {
   return (
     <>
-      <p>This is the form page</p>
+      <form>
+        <InputControl
+          label="Name"
+          name="name"
+          placeholder="your name"
+        />
+      </form>
     </>
   );
 }
+
+

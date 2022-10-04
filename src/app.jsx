@@ -4,7 +4,7 @@ import {
   Route,
 } from 'react-router-dom';
 
-import Search from './components/Search/Search.jsx'
+import Search from './components/Search/Search.jsx';
 
 export default function App() {
   return(

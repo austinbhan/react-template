@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import SearchForm from './SearchForm.jsx';
 import SearchResults from './SearchResults.jsx';
 import useSearchResults from '../../hooks/use-search-results.js';
@@ -10,7 +10,7 @@ export default function Search() {
     nextPage,
     pokemon,
     setPokemon,
-    searchParams,
+    // searchParams,
     searchResults,
     searchPokedex,
   } = useSearchResults();

@@ -6,6 +6,7 @@ function FormControl({ label, required, children }) {
   return (
     <label className={className}>
       <LabelText text={label} required={required} />
+      {children}
     </label>
   );
 }

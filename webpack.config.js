@@ -1,4 +1,5 @@
 /* eslint-disable no-undef */
+const Dotenv = require('dotenv-webpack');
 const webpack = require('webpack');
 const path = require('path');
 const HtmlPlugin = require('html-webpack-plugin');
@@ -26,6 +27,7 @@ module.exports = {
     historyApiFallback: true,
   },
   plugins: [
+    new Dotenv(),
     new HtmlPlugin({ template: './src/index.html' }),
     new CleanWebpackPlugin(),
     new webpack.EnvironmentPlugin(env),

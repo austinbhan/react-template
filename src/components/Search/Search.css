@@ -6,3 +6,7 @@
 .SearchResultCard {
     display: grid;
 }
+
+.input {
+    color: red;
+}

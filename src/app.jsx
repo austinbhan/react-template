@@ -1,7 +1,17 @@
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from 'react-router-dom';
+
+import Search from './components/Search/Search.jsx'
+
 export default function App() {
   return(
-    <>
-      <h1>This is the front page</h1>
-    </>
+    <Router>
+      <Routes>
+        <Route path="search" element={<Search />} />
+      </Routes>
+    </Router>
   );
 }
